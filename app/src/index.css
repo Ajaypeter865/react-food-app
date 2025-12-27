@@ -48,7 +48,7 @@
 
 }
 
-.res-card :hover {
+.res-container :hover {
   cursor: pointer;
   border: 1px solid black;
 

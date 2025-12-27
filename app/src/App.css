@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.filter-btn {
+  margin: 10px;
+  /* flex-direction: left; */
+  cursor: pointer;
+}
