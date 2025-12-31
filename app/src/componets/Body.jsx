@@ -1,11 +1,11 @@
 import ResturantCard from './ResturantCard'
 import { useState, useEffect } from 'react'
-import resList from '../utils/mockData'
+// import resList from '../utils/mockData'
 
 
 
 const Body = () => {
-    const [listOfResturant, setlistOfResturant] = useState(resList)
+    const [listOfResturant, setlistOfResturant] = useState([])
 
     useEffect(() => {
         fetchData()
@@ -17,16 +17,20 @@ const Body = () => {
 
         const json = await data.json()
 
-        console.log(json);
+        const resturants = json.data.cards.filter(c => c.card?.card?.['@type'] === 'type.googleapis.com/swiggy.presentation.food.v2.Restaurant')
+
+        console.log('Json=', json);
 
 
+        setlistOfResturant(resturants)
     }
+
 
     return (
         <div className='body'>
             <div className='filter'>
                 <button className='filter-btn' onClick={() => {
-                    const newList = listOfResturant.filter(res => res.card.info.avgRating > 4)
+                    const newList = listOfResturant.filter(res => res.card.card.info.avgRating > 4.5)
                     console.log(newList);
 
                     setlistOfResturant(newList)
@@ -35,7 +39,7 @@ const Body = () => {
             </div>
             <div className='res-container'>
                 {
-                    listOfResturant.map(resturant => (<ResturantCard key={resturant.card.info.id} resData={resturant} />))
+                    listOfResturant.map(resturant => (<ResturantCard  resData={resturant}  />))
                 }
 
             </div>

@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 import Header from './componets/Header'
-import Body from './componets/body'
+import Body from './componets/Body'
 
 
 
