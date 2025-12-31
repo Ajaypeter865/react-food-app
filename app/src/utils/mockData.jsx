@@ -13,7 +13,7 @@ const resList = [
                 areaName: "Railway Station",
                 costForTwo: "₹250 for two",
                 cuisines: ["Chinese", "Fast Food", "Kerala"],
-                avgRating: 4.4,
+                avgRating: 3.4,
                 parentId: "243664",
                 avgRatingString: "4.4",
                 totalRatingsString: "3.5K+",
@@ -21,67 +21,12 @@ const resList = [
                     deliveryTime: 25,
                     lastMileTravel: 0.2,
                     serviceability: "SERVICEABLE",
-                    slaString: "20-25 mins",
-                    lastMileTravelString: "0.2 km",
-                    iconType: "ICON_TYPE_EMPTY"
                 },
-                availability: {
-                    nextCloseTime: "2025-12-26 23:59:00",
-                    opened: true
-                },
-                badges: {},
-                isOpen: true,
-                type: "F",
-                badgesV2: {
-                    entityBadges: {
-                        imageBased: {},
-                        textExtendedBadges: {},
-                        textBased: {}
-                    }
-                },
-                aggregatedDiscountInfoV3: {
-                    header: "ITEMS",
-                    subHeader: "AT ₹89",
-                    logoCtx: { text: "BENEFITS" }
-                },
-                orderabilityCommunication: {
-                    title: {},
-                    subTitle: {},
-                    message: {},
-                    customIcon: {},
-                    commsStyling: {}
-                },
-                differentiatedUi: {
-                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    differentiatedUiMediaDetails: {
-                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                        lottie: {},
-                        video: {}
-                    }
-                },
-                reviewsSummary: {},
-                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                restaurantOfferPresentationInfo: {},
-                externalRatings: {
-                    aggregatedRating: { rating: "--" }
-                },
-                ratingsDisplayPreference:
-                    "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            analytics: {},
-            cta: {
-                link:
-                    "swiggy://menu?restaurant_id=402478&source=collection&query=Biryani",
-                text: "RESTAURANT_MENU",
-                type: "DEEPLINK"
-            },
-            widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food"
-        },
-        relevance: {
-            type: "RELEVANCE_TYPE_ON_MENU_RETURN",
-            sectionId: "MENU_RETURN_FOOD"
-        }
 
+            },
+
+
+        },
     },
 
     {
@@ -94,13 +39,10 @@ const resList = [
                 cloudinaryImageId: "6a291877dd87229dd73ebebdd58ffb3e",
                 locality: "PS Road",
                 areaName: "SN Park",
-                costForTwo: "₹350 for two",
                 cuisines: ["Chinese", "Arabian", "Biryani", "Kerala"],
-                avgRating: 4.3,
-                parentId: "87259",
+                avgRating: 3.3,
                 avgRatingString: "4.3",
                 totalRatingsString: "3.3K+",
-                promoted: true,
                 sla: {
                     deliveryTime: 30,
                     lastMileTravel: 1.3,
@@ -109,79 +51,11 @@ const resList = [
                     lastMileTravelString: "1.3 km",
                     iconType: "ICON_TYPE_EMPTY"
                 },
-                availability: {
-                    nextCloseTime: "2025-12-26 23:30:00",
-                    opened: true
-                },
-                badges: {
-                    imageBadges: [
-                        {
-                            imageId: "Rxawards/_CATEGORY-Biryani.png",
-                            description: "Delivery!"
-                        }
-                    ]
-                },
-                isOpen: true,
-                type: "F",
-                badgesV2: {
-                    entityBadges: {
-                        imageBased: {
-                            badgeObject: [
-                                {
-                                    attributes: {
-                                        imageId: "Rxawards/_CATEGORY-Biryani.png",
-                                        description: "Delivery!"
-                                    }
-                                }
-                            ]
-                        },
-                        textExtendedBadges: {},
-                        textBased: {}
-                    }
-                },
-                aggregatedDiscountInfoV3: {
-                    header: "ITEMS",
-                    subHeader: "AT ₹159",
-                    logoCtx: { text: "BENEFITS" }
-                },
-                orderabilityCommunication: {
-                    title: {},
-                    subTitle: {},
-                    message: {},
-                    customIcon: {},
-                    commsStyling: {}
-                },
-                differentiatedUi: {
-                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    differentiatedUiMediaDetails: {
-                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                        lottie: {},
-                        video: {}
-                    }
-                },
-                reviewsSummary: {},
-                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                restaurantOfferPresentationInfo: {},
-                externalRatings: {
-                    aggregatedRating: { rating: "--" }
-                },
-                ratingsDisplayPreference:
-                    "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            analytics: {},
-            cta: {
-                link:
-                    "swiggy://menu?restaurant_id=473419&source=collection&query=Biryani",
-                text: "RESTAURANT_MENU",
-                type: "DEEPLINK"
-            },
-            widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food"
-        },
-        relevance: {
-            type: "RELEVANCE_TYPE_ON_MENU_RETURN",
-            sectionId: "MENU_RETURN_FOOD"
-        }
 
+            },
+
+
+        },
     },
     {
         card: {
@@ -210,65 +84,10 @@ const resList = [
                     lastMileTravelString: "0.2 km",
                     iconType: "ICON_TYPE_EMPTY"
                 },
-                availability: {
-                    nextCloseTime: "2025-12-26 23:59:00",
-                    opened: true
-                },
-                badges: {},
-                isOpen: true,
-                type: "F",
-                badgesV2: {
-                    entityBadges: {
-                        textBased: {},
-                        imageBased: {},
-                        textExtendedBadges: {}
-                    }
-                },
-                aggregatedDiscountInfoV3: {
-                    header: "ITEMS",
-                    subHeader: "AT ₹69",
-                    logoCtx: {
-                        text: "BENEFITS"
-                    }
-                },
-                orderabilityCommunication: {
-                    title: {},
-                    subTitle: {},
-                    message: {},
-                    customIcon: {},
-                    commsStyling: {}
-                },
-                differentiatedUi: {
-                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    differentiatedUiMediaDetails: {
-                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                        lottie: {},
-                        video: {}
-                    }
-                },
-                reviewsSummary: {},
-                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                restaurantOfferPresentationInfo: {},
-                externalRatings: {
-                    aggregatedRating: {
-                        rating: "--"
-                    }
-                },
-                ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            analytics: {},
-            cta: {
-                link: "swiggy://menu?restaurant_id=416467&source=collection&query=Biryani",
-                text: "RESTAURANT_MENU",
-                type: "DEEPLINK"
-            },
-            widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food"
-        },
-        relevance: {
-            type: "RELEVANCE_TYPE_ON_MENU_RETURN",
-            sectionId: "MENU_RETURN_FOOD"
-        }
 
+            },
+
+        },
     },
     {
         card: {
@@ -300,63 +119,10 @@ const resList = [
                     lastMileTravelString: "1.2 km",
                     iconType: "ICON_TYPE_EMPTY"
                 },
-                availability: {
-                    nextCloseTime: "2025-12-26 22:00:00",
-                    opened: true
-                },
-                badges: {},
-                isOpen: true,
-                aggregatedDiscountInfoV2: {},
-                type: "F",
-                badgesV2: {
-                    entityBadges: {
-                        textBased: {},
-                        imageBased: {},
-                        textExtendedBadges: {}
-                    }
-                },
-                orderabilityCommunication: {
-                    title: {},
-                    subTitle: {},
-                    message: {},
-                    customIcon: {},
-                    commsStyling: {}
-                },
-                differentiatedUi: {
-                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    differentiatedUiMediaDetails: {
-                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                        lottie: {},
-                        video: {}
-                    }
-                },
-                reviewsSummary: {},
-                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                restaurantOfferPresentationInfo: {},
-                externalRatings: {
-                    aggregatedRating: {
-                        rating: "3.7",
-                        ratingCount: "892"
-                    },
-                    source: "GOOGLE",
-                    sourceIconImageId: "v1704440323/google_ratings/rating_google_tag"
-                },
-                ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
-                campaignId: "31823996"
-            },
-            analytics: {},
-            cta: {
-                link: "swiggy://menu?restaurant_id=763010&source=collection&query=Biryani",
-                text: "RESTAURANT_MENU",
-                type: "DEEPLINK"
-            },
-            widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food"
-        },
-        relevance: {
-            type: "RELEVANCE_TYPE_ON_MENU_RETURN",
-            sectionId: "MENU_RETURN_FOOD"
-        }
 
+            },
+
+        },
     },
     {
         card: {
@@ -384,66 +150,12 @@ const resList = [
                     lastMileTravelString: "0.3 km",
                     iconType: "ICON_TYPE_EMPTY"
                 },
-                availability: {
-                    nextCloseTime: "2025-12-26 23:45:00",
-                    opened: true
-                },
-                badges: {},
-                isOpen: true,
-                type: "F",
-                badgesV2: {
-                    entityBadges: {
-                        textBased: {},
-                        imageBased: {},
-                        textExtendedBadges: {}
-                    }
-                },
-                aggregatedDiscountInfoV3: {
-                    header: "ITEMS",
-                    subHeader: "AT ₹99",
-                    logoCtx: {
-                        text: "BENEFITS"
-                    }
-                },
-                orderabilityCommunication: {
-                    title: {},
-                    subTitle: {},
-                    message: {},
-                    customIcon: {},
-                    commsStyling: {}
-                },
-                differentiatedUi: {
-                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    differentiatedUiMediaDetails: {
-                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                        lottie: {},
-                        video: {}
-                    }
-                },
-                reviewsSummary: {},
-                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                restaurantOfferPresentationInfo: {},
-                externalRatings: {
-                    aggregatedRating: {
-                        rating: "--"
-                    }
-                },
-                ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            analytics: {},
-            cta: {
-                link: "swiggy://menu?restaurant_id=604525&source=collection&query=Biryani",
-                text: "RESTAURANT_MENU",
-                type: "DEEPLINK"
-            },
-            widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food"
-        },
-        relevance: {
-            type: "RELEVANCE_TYPE_ON_MENU_RETURN",
-            sectionId: "MENU_RETURN_FOOD"
-        }
 
-    }
+            },
+
+
+        }
+    },
 
 ];
 
