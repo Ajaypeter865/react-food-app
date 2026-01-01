@@ -5,6 +5,10 @@ import Shimmer from './Shimmer'
 
 const Body = () => {
     const [listOfResturant, setlistOfResturant] = useState([])
+    const [searchText, setsearchText] = useState('')
+
+    console.log('Body rendered');
+
 
     useEffect(() => {
         fetchData()
@@ -14,21 +18,29 @@ const Body = () => {
 
         const data = await fetch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=11.8718063&lng=75.3675514&collection=83639&tags=layout_CCS_Biryani&sortBy=&filters=&type=rcv2&offset=0&page_type=null')
 
-            // const data = await fetch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=11.8718063&lng=75.3675514&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING')
+        // const data = await fetch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=11.8718063&lng=75.3675514&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING')
 
         const json = await data.json()
 
         const resturants = json.data.cards.filter(c => c.card?.card?.['@type'] === 'type.googleapis.com/swiggy.presentation.food.v2.Restaurant')
 
-        console.log('Json=', json);
+        // console.log('Json=', json);
 
 
         setlistOfResturant(resturants)
     }
-    
+
     return listOfResturant.length === 0 ? <Shimmer /> : (
         <div className='body'>
             <div className='filter'>
+                <div className='search'>
+                    <input type="text" className='search-box' value={searchText} onChange={(e) => { setsearchText(e.target.value) }} />
+                    <button className='search-btn' onClick={() => {
+                        const filteredResturant = listOfResturant.filter((res) => res.card?.card.info.name.includes(searchText))
+
+                        setlistOfResturant(filteredResturant)
+                    }}>Search</button>
+                </div>
                 <button className='filter-btn' onClick={() => {
                     const newList = listOfResturant.filter(res => res.card.card.info.avgRating > 4.5)
                     console.log(newList);

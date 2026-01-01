@@ -4,7 +4,7 @@ const ResturantCard = (props) => {
   console.log('resData =', resData);
   
   const info = resData?.card?.card?.info
-  console.log('Info =', info);
+  // console.log('Info =', info);
   
   if (!info) return null
   const { name, cuisines, avgRating, deliveryTime,cloudinaryImageId } = info

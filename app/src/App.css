@@ -64,3 +64,17 @@
   padding: 0 20px;
   cursor: pointer;
 }
+
+
+.filter {
+  display: flex;
+  /* margin: 10px; */
+  /* justify-content: center; */
+  align-items: center;
+
+}
+
+.search-btn {
+  /* padding: 3px; */
+  cursor: pointer;
+}
