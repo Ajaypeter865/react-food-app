@@ -1,7 +1,6 @@
 import ResturantCard from './ResturantCard'
 import { useState, useEffect } from 'react'
-// import resList from '../utils/mockData'
-
+import Shimmer from './Shimmer'
 
 
 const Body = () => {
@@ -15,6 +14,8 @@ const Body = () => {
 
         const data = await fetch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=11.8718063&lng=75.3675514&collection=83639&tags=layout_CCS_Biryani&sortBy=&filters=&type=rcv2&offset=0&page_type=null')
 
+            // const data = await fetch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=11.8718063&lng=75.3675514&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING')
+
         const json = await data.json()
 
         const resturants = json.data.cards.filter(c => c.card?.card?.['@type'] === 'type.googleapis.com/swiggy.presentation.food.v2.Restaurant')
@@ -24,9 +25,8 @@ const Body = () => {
 
         setlistOfResturant(resturants)
     }
-
-
-    return (
+    
+    return listOfResturant.length === 0 ? <Shimmer /> : (
         <div className='body'>
             <div className='filter'>
                 <button className='filter-btn' onClick={() => {
@@ -39,7 +39,7 @@ const Body = () => {
             </div>
             <div className='res-container'>
                 {
-                    listOfResturant.map(resturant => (<ResturantCard  resData={resturant}  />))
+                    listOfResturant.map(resturant => (<ResturantCard resData={resturant} />))
                 }
 
             </div>
