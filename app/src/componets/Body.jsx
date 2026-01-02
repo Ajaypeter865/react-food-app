@@ -5,6 +5,7 @@ import Shimmer from './Shimmer'
 
 const Body = () => {
     const [listOfResturant, setlistOfResturant] = useState([])
+    const [filteredResturant, setFilteredResturant] = useState([])
     const [searchText, setsearchText] = useState('')
 
     console.log('Body rendered');
@@ -28,6 +29,7 @@ const Body = () => {
 
 
         setlistOfResturant(resturants)
+        setFilteredResturant(resturants)
     }
 
     return listOfResturant.length === 0 ? <Shimmer /> : (
@@ -38,7 +40,7 @@ const Body = () => {
                     <button className='search-btn' onClick={() => {
                         const filteredResturant = listOfResturant.filter((res) => res.card?.card.info.name.toLowerCase().includes(searchText.toLowerCase()))
 
-                        setlistOfResturant(filteredResturant)
+                        setFilteredResturant(filteredResturant)
                     }}>Search</button>
                 </div>
                 <button className='filter-btn' onClick={() => {
@@ -51,7 +53,7 @@ const Body = () => {
             </div>
             <div className='res-container'>
                 {
-                    listOfResturant.map(resturant => (<ResturantCard resData={resturant} />))
+                    filteredResturant.map(resturant => (<ResturantCard resData={resturant} />))
                 }
 
             </div>
