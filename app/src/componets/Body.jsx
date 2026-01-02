@@ -36,7 +36,7 @@ const Body = () => {
                 <div className='search'>
                     <input type="text" className='search-box' value={searchText} onChange={(e) => { setsearchText(e.target.value) }} />
                     <button className='search-btn' onClick={() => {
-                        const filteredResturant = listOfResturant.filter((res) => res.card?.card.info.name.includes(searchText))
+                        const filteredResturant = listOfResturant.filter((res) => res.card?.card.info.name.toLowerCase().includes(searchText.toLowerCase()))
 
                         setlistOfResturant(filteredResturant)
                     }}>Search</button>
