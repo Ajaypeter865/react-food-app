@@ -25,9 +25,6 @@ const Body = () => {
 
         const resturants = json.data.cards.filter(c => c.card?.card?.['@type'] === 'type.googleapis.com/swiggy.presentation.food.v2.Restaurant')
 
-        // console.log('Json=', json);
-
-
         setlistOfResturant(resturants)
         setFilteredResturant(resturants)
     }
