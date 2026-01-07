@@ -78,3 +78,9 @@
   /* padding: 3px; */
   cursor: pointer;
 }
+
+.user-card {
+  border: .5px solid black;
+  text-align: start;
+  padding: 5px 10px;
+}
