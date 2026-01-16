@@ -13,7 +13,7 @@ const ResturantMenu = () => {
     }, [])
 
     const fetchMenu = async () => {
-        const data = menuData
+        const data = 'https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=11.8718063&lng=75.3675514&restaurantId=1274366&catalog_qa=undefined&query=Biryani&submitAction=ENTER'
         console.log('Data', data.data);
         setResInfo(data.data)
 

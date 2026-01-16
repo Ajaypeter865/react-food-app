@@ -17,7 +17,7 @@ const Body = () => {
 
     const fetchData = async () => {
 
-        const data = await fetch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=11.8718063&lng=75.3675514&collection=83639&tags=layout_CCS_Biryani&sortBy=&filters=&type=rcv2&offset=0&page_type=null')
+        const data = await fetch('https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=11.8718063&lng=75.3675514&restaurantId=1274366&catalog_qa=undefined&query=Biryani&submitAction=ENTER')
 
         // const data = await fetch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=11.8718063&lng=75.3675514&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING')
 
